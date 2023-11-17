@@ -1,4 +1,4 @@
-# EZ-FIFOs with LWT
+# EZ-CASTs with LWT
 
 ## Objectives
 
