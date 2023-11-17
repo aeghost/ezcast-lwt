@@ -1,0 +1,6 @@
+(executable
+ (name demo)
+ (modules demo)
+ (libraries fmt ezcast-lwt str lwt.unix)
+ (preprocess
+  (pps lwt_ppx)))

@@ -1,0 +1,20 @@
+(executable
+ (name client)
+ (modules client)
+ (libraries ezcast-lwt str lwt.unix protocol)
+ (preprocess
+  (pps lwt_ppx)))
+
+(executable
+ (name server)
+ (modules server)
+ (libraries ezcast-lwt str lwt.unix protocol)
+ (preprocess
+  (pps lwt_ppx)))
+
+(library
+ (name protocol)
+ (modules protocol)
+ (libraries)
+ (preprocess
+  (pps lwt_ppx)))

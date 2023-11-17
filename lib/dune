@@ -1,0 +1,7 @@
+(library
+ (name ezcast_lwt)
+ (public_name ezcast-lwt)
+ (modules ezcast_lwt)
+ (libraries lwt.unix fmt lwt fileutils)
+ (preprocess
+  (pps lwt_ppx)))
